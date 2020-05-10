@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap");
+
+body {
+  font-family: "Ropa Sans", sans-serif;
+  font-size: 16px;
+}
+
+.App {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+}
+
+input {
+  font-family: "Ropa Sans", sans-serif;
+}
+
+#calcForm {
+  width: 300px;
+  label {
+    display: block;
+    margin-bottom: 2rem;
+    input[type="number"],
+    input[type="date"] {
+      float: right;
+      padding: 0.5rem;
+      border-radius: 5px;
+      border: 0px;
+      background: #eee;
+    }
+  }
+
+  input[type="submit"] {
+    float: right;
+    background: black;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    appearance: none;
+    border-radius: 5px;
+  }
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+.currentValue {
+  font-size: 3rem;
+}
+
+.chart {
+  width: 50%;
+  margin-left: 10%;
+  height: 300px;
+}
+
+@media (max-width: 800px) {
+  .App {
+    display: block;
+  }
+  .chart {
+    width: 100%;
+    height: 300px;
+  }
+}

@@ -3,11 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "3d-force-graph": "^1.61.4",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
     "@testing-library/user-event": "^7.2.1",
+    "black-scholes": "^1.1.0",
+    "bs-formula": "0.0.1",
+    "node-sass": "^4.13.1",
     "react": "^16.12.0",
+    "react-charts": "^2.0.0-beta.6",
     "react-dom": "^16.12.0",
+    "react-force-graph-3d": "^1.14.6",
+    "react-function-plot": "0.0.14",
     "react-scripts": "3.3.1"
   },
   "scripts": {
