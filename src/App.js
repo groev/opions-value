@@ -73,7 +73,7 @@ function App() {
         type: "linear",
         position: "bottom"
       },
-      { type: "linear", position: "left" }
+      { hardMin: 0, type: "linear", position: "left" }
     ],
     []
   );
