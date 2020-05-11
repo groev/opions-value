@@ -91,8 +91,6 @@ export default function Form(props) {
           checked={values.type === "put" ? true : false}
         />
       </label>
-
-      <input type="submit" value="Calculate" />
     </form>
   );
 }

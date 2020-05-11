@@ -79,14 +79,15 @@ function App() {
   );
   return (
     <div className="App">
-      <h1>Option value nach Black Scholes</h1>
+      <h1>Options value with Black Scholes</h1>
       <div class="container">
-        <div>
-          <Form calculate={calculate} />
-          <div className="currentValue">{parseFloat(result).toFixed(2)}$</div>
-        </div>
         <div className="chart">
           <Chart data={data} axes={axes} />
+        </div>
+        <div>
+          <div className="currentValue">{parseFloat(result).toFixed(2)}$</div>
+
+          <Form calculate={calculate} />
         </div>
       </div>
     </div>
