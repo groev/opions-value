@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 
 export default function Form(props) {
   const [values, setValues] = useState({
-    currentPrice: 2900,
+    currentPrice: 100,
     strikeDate: "2020-06-19",
-    strikePrice: 2100,
+    strikePrice: 90,
     type: "call",
     volatility: 50
   });
