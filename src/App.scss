@@ -1,89 +1,94 @@
-@import url("https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
 
 body {
-  font-family: "Ropa Sans", sans-serif;
-  font-size: 24px;
+	font-family: 'Ropa Sans', sans-serif;
+	font-size: 24px;
 }
 
 .App {
-  padding: 1rem;
-  max-width: 1200px;
-  margin: 0 auto;
+	padding: 1rem;
+	max-width: 1200px;
+	margin: 0 auto;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .container {
-  display: flex;
+	display: flex;
 }
 
 input {
-  font-family: "Ropa Sans", sans-serif;
+	font-family: 'Ropa Sans', sans-serif;
 }
 
 #calcForm {
-  width: 300px;
-  label {
-    display: block;
-    margin-bottom: 1.5rem;
-    input[type="number"],
-    input[type="date"] {
-      float: right;
-      padding: 0.5rem;
-      border-radius: 5px;
-      border: 0px;
-      background: #eee;
-      font-size: 24px;
-      width: 130px;
-      appearance: none;
-    }
-  }
+	width: 400px;
+	label {
+		display: block;
+		margin-bottom: 1.5rem;
+		input[type='number'],
+		input[type='date'] {
+			float: right;
+			padding: 0.5rem;
+			border-radius: 5px;
+			border: 0px;
+			background: #eee;
+			font-size: 24px;
+			width: 200px;
+			appearance: none;
+		}
+	}
 
-  input[type="submit"] {
-    float: right;
-    background: black;
-    color: #fff;
-    border: none;
-    padding: 0.5rem 1rem;
-    appearance: none;
-    border-radius: 5px;
-  }
-  &:after {
-    content: "";
-    display: block;
-    clear: both;
-  }
+	input[type='submit'] {
+		float: right;
+		background: black;
+		color: #fff;
+		border: none;
+		padding: 0.5rem 1rem;
+		appearance: none;
+		border-radius: 5px;
+	}
+	&:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
 }
 
 .currentValue {
-  font-size: 3rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+	font-size: 3rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 
 .chart {
-  width: 50%;
-  margin-right: 10%;
-  height: 300px;
+	width: 50%;
+	margin-right: 10%;
+	height: 300px;
 }
 h1 {
-  margin: 0;
-  font-size: 2rem;
-  margin-bottom: 2rem;
+	margin: 0;
+	font-size: 2rem;
+	margin-bottom: 2rem;
 }
 
 @media (max-width: 800px) {
-  .container {
-    display: block;
-  }
-  .chart {
-    max-width: 100%;
-    width: 100%;
-    padding: 0;
-    box-sizing: border-box;
-    margin: 0;
-    margin-top: 1rem;
-    height: 200px;
-  }
-  h1 {
-    margin-bottom: 0;
-  }
+	.container {
+		display: block;
+	}
+	.chart {
+		max-width: 100%;
+		width: 100%;
+		padding: 0;
+		box-sizing: border-box;
+		margin: 0;
+		margin-top: 1rem;
+		height: 200px;
+	}
+	h1 {
+		margin-bottom: 0;
+	}
 }
